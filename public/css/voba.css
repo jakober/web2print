@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'Frutiger VR';
+	font-weight: normal;
+	src: url('/visika/fonts/FrutigerVR.woff');
+}
+@font-face {
+	font-family: 'Frutiger VR';
+	font-weight: bold;
+	src: url('/visika/fonts/FrutigerVRBold.woff');
+}
+@font-face {
+	font-family: 'Frutiger VR';
+        font-style: italic;
+	src: url('/visika/fonts/FrutigerVRItalic.woff');
+}
+@font-face {
+	font-family: 'Frutiger VR';
+	font-weight: bold;
+        font-style: italic;
+	src: url('/visika/fonts/FrutigerVRBoldItalic.woff');
+}
+@font-face {
+    font-family: 'genosgfg';
+    font-weight: normal;
+    src: url('/visika/fonts/genosgfg.woff');
+}
+@font-face {
+    font-family: 'genosgfgb';
+    font-weight: normal;
+    src: url('/visika/fonts/genosgfgb.woff');
+}
+
+
+body, input, select, option {
+    font-family: 'Frutiger VR', Arial, Helvetica !important;
+    font-weight: normal;
+}
+
+
+.header .logo {
+    background-image: url(/img/logos/hdh-voba.png);
+}
+
+::-webkit-input-placeholder { font-family: 'Frutiger VR';color: #6e6e6e;}
+::-moz-placeholder { font-family: 'Frutiger VR';color: #6e6e6e; } /* firefox 19+ */
+:-ms-input-placeholder { font-family: 'Frutiger VR';color: #6e6e6e; } /* ie */
+input:-moz-placeholder { font-family: 'Frutiger VR';color: #6e6e6e; }
+input {
+	font-size: 13px;
+}
+
+input:hover, select:hover {
+	box-shadow: 0 0 2px 1px #0066b3;
+}
+
+#inputs table td .info {
+	background-color: #0066b3;
+}
+
+input:hover, select:hover, input:focus, select:focus {
+    box-shadow: 0 0 2px 1px #10508C;
+    behavior: url(PIE.htc);
+}
+
+input.error, select.error,input.error:focus, select.error:focus,input.error:hover, select.error:hover {
+    box-shadow: 0 0 2px 1px #ff0000;
+}
+
+
+input.button {
+    background-color: #10508C;
+    color:#fff;
+    background-image: -moz-linear-gradient(0deg, #10508C, #C3D3E2);
+    background-image: -ms-linear-gradient(0deg, #10508C, #C3D3E2);
+    background-image: -o-linear-gradient(0deg, #10508C, #C3D3E2);
+    background-image: -webkit-linear-gradient(0deg, #10508C, #C3D3E2);
+    background-image: linear-gradient(0deg, #10508C, #C3D3E2);
+    border: 1px solid #082846;
+    behavior: url(PIE.htc);
+    margin-right:15px;
+}
+
+
+#inputs table td .info {
+    background-color: #10508C;
+}
+
+div.anschrift:hover label {
+    background:#C3D3E2;
+}
+
+.tabs li.active a {
+    font-weight: bold;
+    color: #10508C !important;
+}
+
+input.button {
+	background-image: linear-gradient(0deg, #0066b3, #5797c7);
+	color: white;
+}
+
+.logout, .custom-bg {
+    background: #10508C;
+}
+
+.logout, .custom-bg {
+    color:#fff;
+}

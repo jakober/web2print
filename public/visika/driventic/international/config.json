@@ -1,0 +1,329 @@
+{
+    "inputs": [
+        {
+            "name": "titel",
+            "label": "Title",
+            "default": "",
+            "info": "e.g. Prof., Dr.",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "vorname",
+            "label": "First name",
+            "placeholder": "First name",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Last name",
+            "placeholder": "Last name",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "aktitel",
+            "label": "Academic title",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "funktion",
+            "label": "Position / Department",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobile Phone",
+            "placeholder": "Format +49 151 1234567",
+            "default": "",
+            "info": "Format +49 151 1234567",
+            "validation": {
+                "required": false,
+                "pattern": "^\\+\\d{1,3} \\d{2,4}(?: ?\\d+)+$"
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-mail",
+            "placeholder": "your.name@driventic.com",
+            "default": "",
+            "info": "Format for e-mail address: <span style=\"text-decoration:underline;\">max.mustermann@driventic.com</span>",
+            "validation": {
+                "required": true,
+                "pattern": "^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+            }
+        },
+        {
+            "name": "durchwahl",
+            "label": "Phone",
+            "default": "",
+            "validation": {
+                "required": false,
+                "pattern": "^\\+\\d{1,3} \\d{2,4}(?: ?\\d+)+$"
+            }
+        },
+        {
+            "name": "firma",
+            "label": "Company",
+            "default": "Driventic GmbH",
+            "info": "",
+            "validation": {
+                "required": true
+            },
+            "values": [
+                "Driventic GmbH",
+                "Driventic s.o",
+                "(Free text)"
+            ]
+        },
+        {
+            "name":  "firma_freitext",
+            "label": "Free text (Company)",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "strasse",
+            "label": "Street / No",
+            "placeholder": "Erchenstr. 58",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "ort",
+            "label": "Postal code / City",
+            "placeholder": "89522 Heidenheim",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "land",
+            "label": "Country",
+            "placeholder": "Germany",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": true
+            },
+            "values": [
+                "Austria",
+                "Brazil",
+                "Chile",
+                "China",
+                "Columbia",
+                "France",
+                "Germany",
+                "Hongkong",
+                "Israel",
+                "Italy",
+                "Mexico",
+                "Panama",
+                "Poland",
+                "Singapore",
+                "South Africa",
+                "Spain",
+                "Turkey",
+                "UAE",
+                "United Kingdom",
+                "USA",
+                "(Free text)"
+            ]
+        },
+        {
+            "name":  "land_freitext",
+            "label": "Free text (Country)",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "pre_name",
+            "fontFamily": "acuminpromedium",
+            "fontWeight": "normal",
+            "fontSize": 8.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 25.5
+        },
+        {
+            "name": "name",
+            "fontFamily": "acuminpromedium",
+            "fontWeight": "normal",
+            "fontSize": 8.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 28.6
+        },
+        {
+            "name": "aktitel",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 31.8
+        },
+        {
+            "name": "funktion",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 35
+        },
+        {
+            "name": "funktion2",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 15
+        },
+        {
+            "name": "rolle",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 23.5
+        },
+        {
+            "name": "pre_mail",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 41.4
+        },
+        {
+            "name": "email",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 5.7,
+            "y": 44.6
+        },
+        {
+            "name": "firma",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 28.6
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 31.8
+        },
+        {
+            "name": "pre_ort",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 31.8
+        },
+        {
+            "name": "ort",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 35
+        },
+        {
+            "name": "pre_telefon",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 38.2,
+            "text": "Phone"
+        },
+        {
+            "name": "telefon",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 58.7,
+            "y": 38.2
+        },
+        {
+            "name": "pre_mobil",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 41.4,
+            "text": "Mobile"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 58.7,
+            "y": 41.4
+        },
+        {
+            "name": "internet",
+            "fontFamily": "acuminprolight",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51.5,
+            "y": 44.6,
+            "text": "www.driventic.com"
+        }
+    ],
+    "qrcodes": [
+
+    ],
+    "scale": 1.25822552864762
+}

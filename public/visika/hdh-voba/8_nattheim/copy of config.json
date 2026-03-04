@@ -1,0 +1,267 @@
+{
+    "inputs": [
+        {
+            "name": "name",
+            "label": "Name",
+            "default": "Max Mustermann",
+            "info": "Vorname Nachname",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "titel",
+            "label": "Titel",
+            "default": "",
+            "info": "z.B. Betriebswirt",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "titel2",
+            "label": "",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "vollmacht",
+            "label": "Vollmacht",
+            "default": "",
+            "info": "z.B. Bevollmächtigter",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "funktion",
+            "label": "Funktion oder Stelle",
+            "default": "",
+            "info": "z.B. Finanzplaner",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "funktion2",
+            "label": "",
+            "default": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "telefon",
+            "label": "Telefon Durchwahl",
+            "default": "0",
+            "info": "Durchwahl mit \"-\" getrennt",
+            "validation": {
+                "required": true,
+                "maxlength": 5,
+                "pattern": "^\\d+$"
+            }
+        },
+        {
+            "name": "telefax",
+            "label": "Telefax Durchwahl",
+            "default": "",
+            "info": "Durchwahl mit \"-\" getrennt",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobilrufnummer",
+            "default": "",
+            "info": "Nur wenn erforderlich. Format: 0173 33668866",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "internet",
+            "label": "Internet",
+            "default": "www.hdh-voba.de",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "default": "max.mustermann@hdh-voba.de",
+            "info": "Kleinschreibung!",
+            "validation": {
+                "required": false,
+                "pattern": "^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "genosgfgb",
+            "fontWeight": "normal",
+            "fontSize": 9,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 29
+        },
+        {
+            "name": "titel",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 32.5
+        },
+        {
+            "name": "titel2",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 35.4
+        },
+        {
+            "name": "vollmacht",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 38.3
+        },
+        {
+            "name": "funktion",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 41.2
+        },
+        {
+            "name": "funktion2",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 44.1
+        },
+        {
+            "name": "stelle",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 53.5,
+            "text": "Geschäftsstelle Nattheim"
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 56.4,
+            "text": "Neresheimer Straße 2"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 59.3,
+            "text": "89564 Nattheim"
+        },
+        {
+            "name": "_telefon",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 64,
+            "text": "Fon"
+        },
+        {
+            "name": "telefon",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 11,
+            "y": 64
+        },
+        {
+            "name": "_telefax",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 66.9,
+            "text": "Fax"
+        },
+        {
+            "name": "telefax",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 11,
+            "y": 66.9
+        },
+        {
+            "name": "_mobil",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 69.8,
+            "text": "Mobil"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 13.5,
+            "y": 69.8
+        },
+        {
+            "name": "email",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 74.3
+        },
+        {
+            "name": "internet",
+            "fontFamily": "genosgfg",
+            "fontWeight": "normal",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,80)",
+            "x": 6,
+            "y": 77.2
+        }
+    ],
+    "scale": 1.35
+}

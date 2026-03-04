@@ -1,0 +1,13 @@
+/bootstrap/compiled.php
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.DS_Store
+Thumbs.db.svn
+.svn
+
+tools/
+*.bak
+out.sql
+web2print.sql

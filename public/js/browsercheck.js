@@ -1,0 +1,1 @@
+if(document.createElementNS===undefined)location.href='/alter_browser';

@@ -1,0 +1,305 @@
+{
+    "inputs": [
+        {
+            "name": "firma",
+            "label": "Firma",
+            "placeholder": "",
+            "default": "RÖHM GmbH",
+            "info": "",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "titel1",
+            "label": "Titel 1 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "titel2",
+            "label": "Titel 2 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "abteilung1",
+            "label": "Abteilung 1 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "abteilung2",
+            "label": "Abteilung 2 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "strasse",
+            "label": "Straße",
+            "info": "",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "ort",
+            "label": "PLZ / Ort",
+            "info": "Schreibweise: D-12345 Musterhausen",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "_fon",
+            "label": "Text für \"Tel.\"",
+            "info": "Tel. / Phone, ...",
+            "default": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "fon",
+            "label": "Telefon",
+            "info": "Telefon<br />+49 7325 16 ...",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "_fax",
+            "label": "Text für \"Fax\"",
+            "info": "Fax",
+            "default": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "fax",
+            "label": "Fax",
+            "info": "Fax<br />+49 7325 16 ...",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "_mobil",
+            "label": "Text für \"Mobil\"",
+            "info": "Mobil",
+            "default": "Mobil",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobil",
+            "default": "",
+            "info": "Mobilrufnummer",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@roehm.biz",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@roehm.biz</span>",
+            "validation": {
+                "required": true,
+                "pattern": ""
+            }
+        },
+        {
+            "name": "internet",
+            "label": "Internet",
+            "default": "www.roehm.biz",
+            "info": "Gültige WWW-Adresse",
+            "validation": {}
+        }
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "helveticaneueltw1gmd",
+            "fontWeight": "",
+            "fontSize": 10,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 21.5
+        },
+        {
+            "name": "titel1",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 25.4
+        },
+        {
+            "name": "titel2",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 28.4
+        },
+        {
+            "name": "abteilung1",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 31.4
+        },
+        {
+            "name": "abteilung2",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 34.4
+        },
+        {
+            "name": "firma",
+            "fontFamily": "helveticaneueltw1gmd",
+            "fontWeight": "",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 25.55
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 28.55,
+            "text": "Heinrich-Röhm-Straße 50"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 31.55,
+            "text": "D-89567 Sontheim/Brenz"
+        },
+        {
+            "name": "_fon",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 34.55,
+            "text": "Tel."
+        },
+        {
+            "name": "fon",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 34.55
+        },
+        {
+            "name": "_fax",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 37.55,
+            "text": "Fax"
+        },
+        {
+            "name": "fax",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 37.55
+        },
+        {
+            "name": "_mobil",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 40.55,
+            "text": "Mobil"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 40.55
+        },
+        {
+            "name": "email",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 43.55
+        },
+        {
+            "name": "internet",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 46.55
+        }
+    ],
+    "qrcodes": [],
+    "scale": 1.6
+}

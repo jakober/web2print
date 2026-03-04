@@ -1,0 +1,241 @@
+{
+    "inputs": [
+        {
+            "name": "titel",
+            "label": "Titel",
+            "default": "",
+            "info": "z.B. Prof., Dr.",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "aktitel",
+            "label": "Akademischer Titel",
+            "info": "",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Bachelor of Arts",
+                "Bachelor of Engineering",
+                "Bachelor of Science",
+                "Bachelor of Science (FH)",
+                "Dipl.-Betriebswirt",
+                "Dipl.-Betriebswirt (FH)",
+                "Dipl.-Betriebswirtin",
+                "Dipl.-Betriebswirtin (FH)",
+                "Dipl.-Chem.-oec.",
+                "Dipl.-Ing.",
+                "Dipl.-Ing. (Arch)",
+                "Dipl.-Ing. (TU)",
+                "Dipl.-Ing. oec.",
+                "Dipl.-Ing. (FH)",
+                "Dipl.-Kauffrau",
+                "Dipl.-Logistiker",
+                "Dipl.oec.",
+                "Dipl.-Volkswirt",
+                "Dipl.-Wirt.-Ing.",
+                "Dipl.-Wirt.-Ing. (FH)",
+                "Dipl.-Wirt.-Ing. (TU)",
+                "Dipl.-Wirt.-Ing. (Univ.)",
+                "Dipl.-Wirtschaftssinologe (FH)",
+                "Dipl.-WiWi.",
+                "Master of Arts",
+                "Master of Business and Engineering",
+                "Master of Engineering",
+                "Master of Science",
+                "Master of Science Wirt.-Ing.",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "aktitel_freitext",
+            "label": "Freitext (Ak. Titel)",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@musterdesign.de",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@ingenics.de</span>",
+            "validation": {
+                "required": true,
+                "pattern": "^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobil",
+            "placeholder": "Format +49 151 1234567",
+            "default": "",
+            "info": "Format +49 151 1234567",
+            "validation": {
+                "required": false,
+                "pattern": "^\\+(\\d){0,3} (\\d){3,4} ([\\d ]{6,12})$"
+            }
+        },
+        {
+            "name": "durchwahl",
+            "label": "Durchwahl",
+            "default": "0",
+            "info": "Haben Sie eine feste Durchwahl? Dann geben Sie diese bitte hier an.",
+            "validation": {
+                "required": false,
+                "pattern": "^\\d+$"
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "fullname",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "bold",
+            "fontSize": 10,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 29,
+            "page": "2"
+        },
+        {
+            "name": "aktitel",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "bold",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 32.4,
+            "page": "2"
+        },
+        {
+            "name": "email",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 35.8,
+            "page": "2"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 39.2,
+            "page": "2"
+        },
+        {
+            "name": "firma",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "bold",
+            "fontSize": 10,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 29,
+            "textAnchor": "end",
+            "text": "Muster Design",
+            "page": "2"
+        },
+        {
+            "name": "office",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "bold",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 32.4,
+            "textAnchor": "end",
+            "text": "Hauptstandort",
+            "page": "2"
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 35.8,
+            "textAnchor": "end",
+            "text": "Musterstraße 1",
+            "page": "2"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 39.2,
+            "textAnchor": "end",
+            "text": "12345 Musterstadt",
+            "page": "2"
+        },
+        {
+            "name": "telefon",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 42.6,
+            "textAnchor": "end",
+            "page": "2"
+        },
+        {
+            "name": "internet",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 51,
+            "y": 46,
+            "textAnchor": "end",
+            "text": "www.musterdesign.de",
+            "page": "2"
+        },
+        {
+            "name": "internet2",
+            "fontFamily": "MyriadPro",
+            "fontWeight": "normal",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 42.5,
+            "y": 42,
+            "textAnchor": "middle",
+            "text": "www.musterdesign.de",
+            "page": "1"
+        }
+    ],
+    "scale": 1.3
+}

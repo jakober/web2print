@@ -1,0 +1,224 @@
+{
+    "inputs": [
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "position1",
+            "label": "Position im Unternehmen",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "titel2",
+            "label": "Zweite Zeile (Optional)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "titel3",
+            "label": "Dritte Zeile (Optional)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "fon",
+            "label": "Telefon",
+            "info": "Format Telefon<br />+49 7325 16 ...",
+            "validation": {
+                "required": false,
+                "maxlength": 40
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobile",
+            "default": "",
+            "info": "Format Mobilrufnummer<br />+49 171 23232233",
+            "validation": {
+                "required": false,
+                "maxlength": 40
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@aluca.com",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@aluca.de</span>",
+            "validation": {
+                "required": true
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "robotob",
+            "fontWeight": "normal",
+            "fontSize": 12.4,
+            "color": "cmyk(87,67,48,51)",
+            "x": 78.2,
+            "y": 10.3,
+            "textAlignment": "right"
+        },
+        {
+            "name": "position1",
+            "fontFamily": "robotolight",
+            "fontWeight": "normal",
+            "fontSize": 9.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 78.2,
+            "y": 14.8,
+            "textAlignment": "right"
+        },
+        {
+            "name": "titel2",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 9.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 78.2,
+            "y": 19.3,
+            "textAlignment": "right"
+        },
+        {
+            "name": "titel3",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 9.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 78.2,
+            "y": 23.8,
+            "textAlignment": "right"
+        },
+        {
+            "name": "abteilung1",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 31.4
+        },
+        {
+            "name": "abteilung2",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 34.4
+        },
+        {
+            "name": "roehm",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 7,
+            "y": 32.2,
+            "letterSpacing": "0.05px",
+            "text": "ALUCA GmbH, Westring 1"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 7,
+            "y": 35.4,
+            "letterSpacing": "0.05px",
+            "text": "74538 Rosengarten, Germany"
+        },
+        {
+            "name": "_fon",
+            "fontFamily": "robotob",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 7,
+            "y": 41.9,
+            "letterSpacing": "0.05px",
+            "text": "Phone"
+        },
+        {
+            "name": "fon",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "color": "cmyk(87,67,48,51)",
+            "letterSpacing": "0.05px",
+
+            "x": 15.5,
+            "y": 41.9
+        },
+        {
+            "name": "_mobil",
+            "fontFamily": "robotob",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "color": "cmyk(87,67,48,51)",
+            "letterSpacing": "0.05px",
+            "x": 7,
+            "y": 45.0,
+            "text": "Mobile"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "letterSpacing": "0.05px",
+            "color": "cmyk(87,67,48,51)",
+            "x": 15.5,
+            "y": 45.0
+        },
+        {
+            "name": "email",
+            "fontFamily": "robotolight",
+            "fontWeight": "",
+            "fontSize": 7.1,
+            "letterSpacing": "0.05px",
+            "color": "cmyk(87,67,48,51)",
+            "x": 7,
+            "y": 48.1
+        }
+    ],
+    "qrcodes": [
+        {
+            "code": "qrcode",
+            "page": 1,
+            "color": "cmyk(87,67,48,51)",
+            "x": 7,
+            "y": 12,
+            "size": 16,
+            "margin": 1
+        }
+    ],
+    "scale": 1.3
+}

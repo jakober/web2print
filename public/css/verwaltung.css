@@ -1,0 +1,108 @@
+
+#bestellungen {
+    margin-top:20px;
+}
+#bestellungen .svg {
+    box-shadow: 2px 2px 2px 1px #5c5c5c;
+    margin-right:10px;
+    float:right;
+}
+
+#bestellungen > div {
+    padding:10px;
+    border:solid 1px #000;
+    margin-bottom:-1px;
+}
+
+#bestellungen > div:hover {
+    background:#f0f0f0;
+}
+
+#bestellungen div.info {
+    float:left;
+    display:inline-block;
+    text-align:left;
+}
+
+#bestellungen div.buttons {
+    margin-top:80px;
+}
+
+#bestellungen div.buttons input {
+    margin-right:10px;
+}
+
+table.list {
+    border-collapse:collapse;
+    font-size:10pt;
+}
+table.list tr.odd {
+    background:#e0e0e0;
+}
+table.list th {
+    border: solid 1px #fff;
+}
+table.list th,table.list td {
+    padding: 0px 5px;
+    text-align:center;
+}
+table.list th {
+    padding:5px;
+}
+table.list td {
+    border: solid 1px #000;
+}
+
+table.list td.left {
+    text-align:left;
+}
+table.list td.right {
+    text-align:right;
+}
+
+table.list td.status_1  {
+    background:#fff200;
+    color:#000;
+}
+
+table.list td.status_2 {
+    background:#10e010;
+    color:#000;
+}
+
+table.list td.status_3 {
+    background:#2e3192;
+    color:#fff;
+
+}
+table.list td.status_4 {
+    background:#186f9b;
+    color:#fff;
+}
+
+table.list td.status_5  {
+    background:#059b4e;
+    color:#fff;
+}
+
+table.list td.status_6  {
+    background:#ed1c24;
+    color:#fff;
+}
+
+
+.paging a {
+    background: #e0e0e0;
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3px;
+    min-width:12px;
+    text-align: center;
+    font-size: 10px;
+}
+.paging a:hover, .paging a.active {
+    background: #10508C;
+    color: white;
+}

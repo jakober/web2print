@@ -1,0 +1,316 @@
+{
+    "inputs": [
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "titel1",
+            "label": "Titel 1",
+            "info": "",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Bachelor of Arts",
+                "Bachelor of Engineering",
+                "Dipl.-Ing. (FH)",
+                "Dipl.-Ing. (BA)",
+                "Diplom-Betriebswirt (FH)",
+                "Diplom-Betriebswirt (BA)",
+                "Betriebswirt (VWA)",
+                "Dr.-Ing.",
+                "Maschinenbautechniker",
+                "staatl. geprüfter Techniker",
+                "Industriefachwirt",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "titel1_freitext",
+            "label": "Titel 1 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "titel2",
+            "label": "Titel 2 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "abteilung1",
+            "label": "Abteilung 1",
+            "info": "",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Bereichsleiter",
+                "Abteilungsleiter",
+                "Gruppenleiter",
+                "Meister",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "abteilung1_freitext",
+            "label": "Abteilung 1 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "abteilung2",
+            "label": "Abteilung 2",
+            "info": "",
+            "values": [
+                "",
+                "Mitglied der Geschäftsleitung",
+                "(Freitext)"
+            ],
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "abteilung2_freitext",
+            "label": "Abteilung 2 (Freitext)",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "strasse",
+            "label": "Straße",
+            "info": "",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "ort",
+            "label": "PLZ / Ort",
+            "info": "Schreibweise: D-12345 Musterhausen",
+            "validation": {
+                "required": true
+            }
+        },
+        {
+            "name": "fon",
+            "label": "Telefon",
+            "info": "Telefon<br />+49 7325 16 ...",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "fax",
+            "label": "Fax",
+            "default": "",
+            "info": "Fax<br />+49 7325 16 ...",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobil",
+            "default": "",
+            "info": "Mobilrufnummer",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@roehm.biz",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@roehm.biz</span>",
+            "validation": {
+                "required": true,
+                "pattern": "^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "helveticaneueltw1gmd",
+            "fontWeight": "",
+            "fontSize": 10,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 21.5
+        },
+        {
+            "name": "titel1",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 25.4
+        },
+        {
+            "name": "titel2",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 28.4
+        },
+        {
+            "name": "abteilung1",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 31.4
+        },
+        {
+            "name": "abteilung2",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 4,
+            "y": 34.4
+        },
+        {
+            "name": "roehm",
+            "fontFamily": "helveticaneueltw1gmd",
+            "fontWeight": "",
+            "fontSize": 8,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 25.55,
+            "text": "RÖHM GmbH"
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 28.55,
+            "text": "Heinrich-Röhm-Straße 50"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 31.55,
+            "text": "D-89567 Sontheim/Brenz"
+        },
+        {
+            "name": "_fon",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 34.55,
+            "text": "Tel."
+        },
+        {
+            "name": "fon",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 34.55
+        },
+        {
+            "name": "_fax",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 37.55,
+            "text": "Fax"
+        },
+        {
+            "name": "fax",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 37.55
+        },
+        {
+            "name": "_mobil",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 40.55,
+            "text": "Mobil"
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 52.7,
+            "y": 40.55
+        },
+        {
+            "name": "email",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 43.55
+        },
+        {
+            "name": "internet",
+            "fontFamily": "helveticaneueltw1glt",
+            "fontWeight": "",
+            "fontSize": 7,
+            "color": "cmyk(0,0,0,100)",
+            "x": 44.2,
+            "y": 46.55,
+            "text": "www.roehm.biz"
+        }
+    ],
+    "qrcodes": [],
+    "scale": 1.6
+}

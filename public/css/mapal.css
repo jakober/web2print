@@ -1,0 +1,191 @@
+
+
+@font-face {
+    font-family: 'rotis_sans_serif_w1gbold';
+    src: url('/visika/fonts/rotissansserifw1g-bold-webfont.woff2') format('woff2'),
+         url('/visika/fonts/rotissansserifw1g-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rotis_sans_serif_w1gXBd';
+    src: url('/visika/fonts/rotissansserifw1g-xbold-webfont.woff2') format('woff2'),
+         url('/visika/fonts/rotissansserifw1g-xbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'rotis_sans_serif_w1gregular';
+    src: url('/visika/fonts/rotissansserifw1g-regular-webfont.woff2') format('woff2'),
+         url('/visika/fonts/rotissansserifw1g-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'HiraKakuProN-W3-AlphaNum-01';
+    src: url('/visika/fonts/HiraKakuProN-W3-AlphaNum-01.woff2') format('woff2'),
+         url('/visika/fonts/HiraKakuProN-W3-AlphaNum-01.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HiraKakuProN-W3-AlphaNum-02';
+    src: url('/visika/fonts/HiraKakuProN-W3-AlphaNum-02.woff2') format('woff2'),
+         url('/visika/fonts/HiraKakuProN-W3-AlphaNum-02.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HiraKakuProN-W3-AlphaNum-03';
+    src: url('/visika/fonts/HiraKakuProN-W3-AlphaNum-03.woff2') format('woff2'),
+         url('/visika/fonts/HiraKakuProN-W3-AlphaNum-03.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HiraKakuProN-W3-AlphaNum-04';
+    src: url('/visika/fonts/HiraKakuProN-W3-AlphaNum-04.woff2') format('woff2'),
+         url('/visika/fonts/HiraKakuProN-W3-AlphaNum-04.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: MetaPro;
+    font-weight: normal;
+    src: url('/visika/fonts/MetaPro-Book.woff');
+}
+@font-face {
+    font-family: MetaPro;
+    font-weight: bold;
+    src: url('/visika/fonts/MetaPro-Bold.woff');
+}
+
+@font-face {
+    font-family: MyriadPro;
+    font-weight: normal;
+    src: url('/visika/fonts/MyriadPro-Regular.woff');
+}
+@font-face {
+    font-family: MyriadPro;
+    font-weight: 600;
+    src: url('/visika/fonts/MyriadPro-Semibold.woff');
+}
+@font-face {
+    font-family: 'helveticanowvar';
+    src: url('/visika/fonts/helveticanowvar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica_now_varitalic';
+    src: url('/visika/fonts/helveticanowvaritalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body, input, select, option {
+    font-family: 'rotis_sans_serif_w1gregular', Arial, Helvetica !important;
+    font-weight: normal;
+}
+
+.header .logo {
+    background-image: url(/img/logos/mapal.png);
+}
+
+#qrCodeLink {
+    display: block!important;
+}
+
+/*#container {
+    width: 1400px;
+}
+
+@media screen and (max-width: 1400px) {
+    #container {
+        width: 1100px;
+    }
+}
+div#preview {
+    width: 60%;
+}
+*/
+::-webkit-input-placeholder { font-family: 'rotis_sans_serif_w1gregular';color: #6e6e6e; }
+::-moz-placeholder { font-family: 'rotis_sans_serif_w1gregular';color: #6e6e6e; } /* firefox 19+ */
+:-ms-input-placeholder { font-family: 'rotis_sans_serif_w1gregular';color: #6e6e6e; } /* ie */
+input:-moz-placeholder { font-family: 'rotis_sans_serif_w1gregular';color: #6e6e6e; }
+input {
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    background: #C3D3E2;
+}
+
+input:hover, select:hover, input:focus, select:focus {
+    box-shadow: 0 0 2px 1px #000000;
+    behavior: url(PIE.htc);
+}
+
+input.error, select.error,input.error:focus, select.error:focus,input.error:hover, select.error:hover {
+    box-shadow: 0 0 2px 1px #ff0000;
+}
+
+input.button {
+    background-color: #000000;
+    background-image: -moz-linear-gradient(0deg, #000000, #C3D3E2);
+    background-image: -ms-linear-gradient(0deg, #000000, #C3D3E2);
+    background-image: -o-linear-gradient(0deg, #000000, #C3D3E2);
+    background-image: -webkit-linear-gradient(0deg, #000000, #C3D3E2);
+    background-image: linear-gradient(0deg, #000000, #C3D3E2);
+    border: 1px solid #C3D3E2;
+    color: white;
+    behavior: url(PIE.htc);
+}
+
+
+#inputs table td .info {
+    background-color: #000000;
+}
+
+div.anschrift:hover label {
+    background:#C3D3E2;
+}
+
+.tabs li.active a {
+    font-weight: bold;
+    color: #000000 !important;
+}
+
+a.link {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.logout, .custom-bg {
+    background: #000000;
+}
+
+.logout, .custom-bg {
+    color:#fff;
+}
+
+input,select {
+    border: solid 1px #ccc;
+}

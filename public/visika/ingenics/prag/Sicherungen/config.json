@@ -1,0 +1,337 @@
+{
+    "inputs": [
+        {
+            "name": "titel",
+            "label": "Titel",
+            "default": "",
+            "info": "z.B. Prof., Dr.",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "aktitel",
+            "label": "Akademischer Titel",
+            "info": "",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Bachelor of Arts",
+                "Bachelor of Engineering",
+                "Bachelor of Science",
+                "Bachelor of Science (FH)",
+                "Dipl.-Betriebswirt",
+                "Dipl.-Betriebswirt (FH)",
+                "Dipl.-Betriebswirtin",
+                "Dipl.-Betriebswirtin (FH)",
+                "Dipl.-Chem.-oec.",
+                "Dipl.-Ing.",
+                "Dipl.-Ing. (Arch)",
+                "Dipl.-Ing. (TU)",
+                "Dipl.-Ing. oec.",
+                "Dipl.-Ing. (FH)",
+                "Dipl.-Kauffrau",
+                "Dipl.-Logistiker",
+                "Dipl.oec.",
+                "Dipl.-Volkswirt",
+                "Dipl.-Wirt.-Ing.",
+                "Dipl.-Wirt.-Ing. (FH)",
+                "Dipl.-Wirt.-Ing. (TU)",
+                "Dipl.-Wirt.-Ing. (Univ.)",
+                "Dipl.-Wirtschaftssinologe (FH)",
+                "Dipl.-WiWi.",
+                "Master of Arts",
+                "Master of Business and Engineering",
+                "Master of Engineering",
+                "Master of Science",
+                "Master of Science Wirt.-Ing.",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "aktitel_freitext",
+            "label": "Freitext (Ak. Titel)",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "funktion",
+            "label": "Funktion bei Ingenics",
+            "sublabel": "(ohne Spezifizierung, Freitext nur bei sonstigen Funktionen verwenden) Managing Partner, Partner und APartner geben bitte ausschließlich ihre Funktion an.",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Associate Partner",
+                "Partner",
+                "Managing Partner",
+                "Director Business Unit",
+                "Director",
+                "Director Center of Competence",
+                "Manager Center of Competence ",
+                "Account Director",
+                "Account Manager",
+                "Account Assistant Manager",
+                "Branch Director",
+                "Branch Manager",
+                "Branch Assistant Manager",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "funktion_freitext",
+            "label": "Freitext Funktion",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "rolle",
+            "label": "Rolle bei Ingenics",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "",
+                "Analyst",
+                "Senior Analyst",
+                "Project Engineer",
+                "Senior Project Engineer",
+                "Consultant",
+                "Senior Consultant",
+                "Project Expert",
+                "Consulting Expert",
+                "Project Manager",
+                "Senior Project Manager",
+                "Senior Expert",
+                "Project Director",
+                "Senior Advisor",
+                "Head of Marketing",
+                "Head of Controlling",
+                "Head of Sales Administration",
+                "Head of IT",
+                "Head of Accounting",
+                "Head of Human Relations & Recruiting",
+                "Head of Payroll Accounting",
+                "Head of Business Development",
+                "(Freitext)"
+            ]
+        },
+        {
+            "name": "rolle_freitext",
+            "label": "Freitext Rolle",
+            "default": "",
+            "info": "",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@ingenics.com",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@ingenics.com</span>",
+            "validation": {
+                "required": true,
+                "pattern": "^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobil",
+            "placeholder": "Format +49 151 1234567",
+            "default": "",
+            "info": "Format +49 151 1234567",
+            "validation": {
+                "required": false,
+                "pattern": "^\\+(\\d){0,3} (\\d){3,4} ([\\d ]{6,12})$"
+            }
+        },
+        {
+            "name": "durchwahl",
+            "label": "Durchwahl",
+            "default": "0",
+            "info": "Haben Sie eine feste Durchwahl? Dann geben Sie diese bitte hier an.",
+            "validation": {
+                "required": false,
+                "pattern": "^\\d+$"
+            }
+        }
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 12,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 26.6
+        },
+        {
+            "name": "aktitel",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 29.8
+        },
+        {
+            "name": "funktion",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 33
+        },
+        {
+            "name": "funktion2",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 36.2
+        },
+        {
+            "name": "funktion3",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 39.4
+        },
+        {
+            "name": "rolle",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 36.2
+        },
+        {
+            "name": "email",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 46.2
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 6,
+            "y": 49
+        },
+        {
+            "name": "firma",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 30.2,
+            "text": "Ingenics s.r.o."
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 33.4,
+            "text": "Bucharova 1281/2"
+        },
+        {
+            "name": "strasse2",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 36.6,
+            "text": "Gebäude A"
+        },
+        {
+            "name": "ort",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 39.8,
+            "text": "158 00 Prague 13"
+        },
+        {
+            "name": "land",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 43,
+            "text": "Česká republika"
+        },
+        {
+            "name": "telefon",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 46.2
+        },
+        {
+            "name": "internet",
+            "fontFamily": "MetaPro",
+            "fontWeight": "normal",
+            "fontSize": 6.5,
+            "color": "cmyk(0,0,0,100)",
+            "x": 54,
+            "y": 49.4,
+            "text": "www.ingenics.com"
+        }
+    ],
+    "qrcodes": [
+  
+    ],
+    "scale": 1.3
+}

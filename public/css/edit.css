@@ -1,0 +1,23 @@
+div#preview {
+    width:50%;
+    float: right;
+    background:#fff;
+    margin:auto;
+    padding:10px;
+    bottom:0;
+    text-align:center;
+    overflow: hidden;
+}
+
+div.form {
+    float: left;
+}
+
+#preview svg {
+    box-shadow: 2px 2px 2px 1px #5c5c5c;
+    margin-bottom: 10px;
+}
+
+div.form  td small {
+    display: block;
+}

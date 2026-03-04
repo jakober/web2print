@@ -1,0 +1,322 @@
+body,span,div,form,select,option {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+div.header {
+    padding:6px;
+    margin-bottom: 60px;
+}
+
+#outercontainer {
+    min-width:1120px;
+}
+
+#container {
+    width: 1100px;
+    margin: 20px auto 0 auto;
+}
+
+#main_shadow {
+    background: url('../img/schatten_bottom.png') no-repeat center bottom;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+#main {
+    box-shadow: 0px 0px 5px 2px #a3a3a3;
+    padding: 20px;
+    background: white;
+}
+
+.header .logo {
+    width:600px;
+    height:90px;
+    background-repeat: no-repeat;
+}
+
+.auswahl {
+    text-align:center;
+}
+
+.auswahl img {
+    box-shadow: 2px 2px 2px 1px #5c5c5c;
+    behavior: url(PIE.htc);
+}
+
+select {
+    padding: 5px;
+}
+
+svg {
+    background:#fff;
+}
+
+div.buttons {
+    margin-top:10px;
+    text-align:center;
+}
+
+input.button {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: #6E7849 0 0 10px;
+    border-radius: 18px;
+    color: #ffffff;
+    display: inline-block;
+    margin: auto;
+    padding: 6px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    behavior: url(PIE.htc);
+}
+
+input.button.disabled, input.button[disabled] {
+    opacity:0.3;
+    cursor: default;
+    box-shadow: none !important;
+    behavior: url(PIE.htc);
+}
+input.button.disabled:hover {
+    box-shadow: none !important;
+}
+
+
+
+h1 {
+    font-size:15pt
+}
+h2 {
+    font-size:13pt
+}
+
+/* Tabs */
+div.tabs {
+    //display: none;
+}
+
+table.form td {
+    border: solid 1px #d1d1d1;
+    padding:5px;
+    vertical-align: middle;
+    height:25px;
+}
+table.form td .info {
+    width:20px;
+    height:20px;
+    margin-left:5px;
+    background:url(/img/icons/info2.png) top left no-repeat;
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+
+}
+table.form td .info > div {
+    position:absolute;
+    display:none;
+    left:18px;
+    top:18px;
+    background:white;
+    padding:10px;
+    z-index:1000;
+    width:350px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 7px 4px #a6a6a6;
+}
+table.form td .info:hover > div {
+    display:inline-block;
+}
+
+table.form td.col1 {
+    width:200px;
+    padding:5px 10px 5px 10px;
+}
+
+table.form td.col2 {
+    width:260px;
+    padding:5px 10px 5px 10px;
+}
+
+table.form td.col2 input, table.form td.col2 select {
+    padding: 2px 10px 2px 10px;
+}
+table.form td.col2 input[type='text'], table.form td.col2 input[type='password'] {
+    width:240px;
+}
+table.form td.col2 select {
+    width:260px;
+}
+table.form {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+select {
+    padding: 5px 5px 5px 2px;
+    border:solid 1px #999;
+}
+
+table.form .col1 label {
+    font-weight:bold;
+    font-size:13px;
+}
+
+td form {
+    display:inline;
+}
+.clear {
+    clear:both;
+}
+
+.content {
+    min-height:400px;
+}
+
+.tabs {
+    position: absolute;
+    left: 0px;
+    top: -36px;
+}
+
+.tabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs ul li {
+    float: left;
+    overflow: hidden;
+    padding-left: 4px;
+    margin-left: -7px;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 25px 5px 25px;
+    background: url('../img/navi_inaktiv.png') repeat-x;
+    margin-right: 7px;
+    margin-top: 7px;
+    color:#aaa;
+    margin-left: 3px;
+}
+
+.tabs ul li.active a {
+    background: white;
+    box-shadow: -2px -2px 4px 1px #bebebe;
+    color:#000;
+}
+
+.tabs ul li a:hover {
+    background: white;
+    box-shadow: -2px -2px 4px 1px #bebebe;
+}
+
+#vorschau svg {
+    display:block;
+}
+
+div.outerbox {
+    margin:100px auto;
+    text-align:center
+}
+
+div.loginbox {
+    padding:30px;
+    display:inline-block;
+    box-shadow: 0px 0px 4px 1px #bebebe;
+    behavior: url(PIE.htc);
+}
+
+div.loginbox td {
+    padding:5px;
+}
+
+div.loginbox input {
+    padding: 5px 10px 5px 10px;
+}
+
+td.number {
+    text-align: right;
+    color:#a00000;
+}
+
+.logout {
+    display:inline-block;
+    position:relative;
+    color: #fff;
+    padding:5px;
+    width:21px;
+    height:21px;
+}
+
+.button.small {
+    margin:4px 4px;
+    padding:0 5px;
+    font-size:8pt;
+}
+
+input.button.red {
+    color:#fff;
+    background: #b01028 !important;
+    background-image: -moz-linear-gradient(0deg,  #b01028, #EBC3C9) !important;
+    background-image: -ms-linear-gradient(0deg,  #b01028, #EBC3C9) !important;
+    background-image: -o-linear-gradient(0deg,  #b01028, #EBC3C9) !important;
+    background-image: -webkit-linear-gradient(0deg,  #b01028, #EBC3C9) !important;
+    background-image: linear-gradient(0deg,  #b01028, #EBC3C9) !important;
+    border: 1px solid #800A70;
+    behavior: url(PIE.htc);
+}
+
+input.button.red:hover,input.button.red:focus {
+    box-shadow: 0 0 2px 1px #b01028 !important;
+}
+
+input.button.green {
+    color:#fff;
+    background: #00A000 !important;
+    background-image: -moz-linear-gradient(0deg,  #00A000, #80C080) !important;
+    background-image: -ms-linear-gradient(0deg,  #00A000, #80C080) !important;
+    background-image: -o-linear-gradient(0deg,  #00A000, #80C080) !important;
+    background-image: -webkit-linear-gradient(0deg,  #00A000, #80C080) !important;
+    background-image: linear-gradient(0deg,  #00A000, #80C080) !important;
+    border: 1px solid #008000;
+    behavior: url(PIE.htc);
+}
+
+input.button.green:hover,input.button.green:focus {
+    box-shadow: 0 0 2px 1px #80C080 !important;
+}
+
+/* Meldungen */
+div.error {
+    color:#f00;
+    border:solid 3px #f00;
+    display:inline-block;
+    padding:8px;
+    font-weight: bold;
+}
+
+div.message {
+    color:#00A000;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+table.compact {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    margin:0 !important;
+}
+
+table.compact td {
+    padding:0 !important;
+}
+
+span.small, span.small a, a.small, table.compact a, td.small, table.compact td {
+    font-size:8pt !important;
+}
+

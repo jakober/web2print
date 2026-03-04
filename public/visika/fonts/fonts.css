@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Frutiger;
+	font-weight: bold;
+	src: url('FrutigerVRBold.woff');
+}
+@font-face {
+	font-family: Frutiger;
+	font-weight: normal;
+	src: url('FrutigerVRRoman.woff');
+}
+@font-face {
+	font-family: MetaPro;
+	font-weight: normal;
+	src: url('MetaPro-Book.woff');
+}
+@font-face {
+	font-family: MetaPro;
+	font-weight: bold;
+	src: url('MetaPro-Bold.woff');
+}
+@font-face {
+	font-family: MyriadPro;
+	font-weight: normal;
+	src: url('MyriadPro-Regular.woff');
+}
+@font-face {
+	font-family: MyriadPro;
+	font-weight: 600;
+	src: url('MyriadPro-Semibold.woff');
+}

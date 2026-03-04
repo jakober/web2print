@@ -1,0 +1,7 @@
+a, a:hover, a img {
+    border: none !important;
+}
+
+input.error, select.error,input.error:focus, select.error:focus,input.error:hover, select.error:hover {
+    background: #ff8080;
+}

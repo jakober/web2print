@@ -1,0 +1,265 @@
+{
+    "inputs": [
+        {
+            "name": "titel",
+            "label": "Titel",
+            "default": "",
+            "info": "z.B. Prof., Dr.",
+            "validation": {
+                "required": false
+            }
+        },
+        {
+            "name": "vorname",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "nachname",
+            "label": "Nachname",
+            "placeholder": "Nachname",
+            "info": "",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "funktion",
+            "label": "Funktion bei Hartmann",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "Senior Vice President Personal Health Care"
+            ]
+        },
+        {
+            "name": "funktion2",
+            "label": "Funktion 2 bei Hartmann",
+            "validation": {
+                "required": false
+            },
+            "values": [
+                "Vertrieb Wundmanagement"
+            ]
+        },
+        {
+            "name": "email",
+            "label": "E-Mail",
+            "placeholder": "ihr.name@hartmann.info",
+            "default": "",
+            "info": "Format Schreibweise E-Mail-Adresse: <span style=\"text-decoration:underline;\">max.mustermann@hartmann.info</span>",
+            "validation": {
+                "required": true,
+                "pattern": "^(?![\\- ])([ \\u00c0-\\u01ffa-zA-Z'\\-\\.])+$"
+            }
+        },
+        {
+            "name": "fon",
+            "label": "Telefon Durchwahl",
+            "info": "T +49 (0) 7321 36 ...",
+            "validation": {
+                "required": true,
+                "maxlength": 4
+            }
+        },
+        {
+            "name": "mobil",
+            "label": "Mobil",
+            "default": "",
+            "info": "M +49 (0) XXX XXXX XXX",
+            "validation": {
+                "required": true,
+                "pattern": "^(\\d){0,3} (\\d){4,4} ([\\d ]{4,7})$"
+            }
+        },
+        {
+            "name": "fax",
+            "label": "Fax Durchwahl",
+            "info": "F +49 (0) 7321 36 ...",
+            "validation": {
+                "required": true,
+                "maxlength": 4
+            }
+        },
+        {
+            "name": "servicefon",
+            "label": "Service Telefon Durchwahl",
+            "info": "T +49 (0) 800 XXX XX XX",
+            "validation": {
+                "required": true,
+                "maxlength": 10
+            }
+        },
+        {
+            "name": "servicefax",
+            "label": "Service Fax Durchwahl",
+            "info": "F +49 (0) 800 XXX XX XX",
+            "validation": {
+                "required": true,
+                "maxlength": 10
+            }
+        }
+
+    ],
+    "texts": [
+        {
+            "name": "name",
+            "fontFamily": "PantonBold",
+            "fontWeight": "",
+            "textTransform": "uppercase",
+            "fontSize": 8.6,
+            "color": "cmyk(100,50,0,30)",
+            "x": 5,
+            "y": 20.6
+        },
+        {
+            "name": "funktion",
+            "fontFamily": "PantonRegular",
+            "fontWeight": "",
+            "fontSize": 8.6,
+            "color": "cmyk(88,61,0,0)",
+            "x": 5,
+            "y": 24
+        },
+        {
+            "name": "funktion2",
+            "fontFamily": "PantonRegular",
+            "fontWeight": "",
+            "fontSize": 8.6,
+            "color": "cmyk(88,61,0,0)",
+            "x": 5,
+            "y": 27.4
+        },
+        {
+            "name": "funktion3",
+            "fontFamily": "MetaPro",
+            "fontWeight": "bold",
+            "fontSize": 6.5,
+            "color": "cmyk(100,50,0,30)",
+            "x": 6,
+            "y": 39.4
+        },
+        {
+            "name": "email",
+            "fontFamily": "RobotoRegular",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 32.7
+        },
+        {
+            "name": "fon",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 35.85
+        },
+        {
+            "name": "mobil",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 39
+        },
+        {
+            "name": "fax",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 42.15
+        },
+        {
+            "name": "firma",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 49.55,
+            "text": "PAUL HARTMANN AG | Paul-Hartmann-Straße | 89522 Heidenheim"
+        },
+        {
+            "name": "strasse",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 5,
+            "y": 52.59,
+            "text": "P.O Box 1420 | 89504 Heidenheim | Germany"
+        },
+        {
+            "name": "internet",
+            "fontFamily": "RobotoRegular",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 58.41,
+            "y": 52.59,
+            "text": "www.hartmann.info"
+        },
+        {
+            "name": "service",
+            "fontFamily": "RobotoRegular",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 53,
+            "y": 32.7,
+            "text": "Service-Nummern"
+        },
+        {
+            "name": "servicefon",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 53,
+            "y": 35.85
+        },
+        {
+            "name": "servicefax",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 7.53,
+            "color": "cmyk(100,91,24,7)",
+            "x": 53,
+            "y": 39
+        },
+        {
+            "name": "servicezusatz1",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 5,
+            "color": "cmyk(100,91,24,7)",
+            "x": 53,
+            "y": 42.15,
+            "text": "* kostenfrei aus dem deutschen"
+        },
+        {
+            "name": "servicezusatz2",
+            "fontFamily": "RobotoLight",
+            "fontWeight": "",
+            "fontSize": 5,
+            "color": "cmyk(100,91,24,7)",
+            "x": 54.2,
+            "y": 44.15,
+            "text": "Festnetz und Mobilfunknetz"
+        }
+    ],
+    "scale": 1.6
+}

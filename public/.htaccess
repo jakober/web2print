@@ -1,0 +1,60 @@
+#AddType application/x-httpd-php72 .php
+AddType text/x-component .htc
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+
+
+
+    RewriteBase /
+
+    # Redirect Trailing Slashes...
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+  #  RewriteCond %{REQUEST_URI} !^/login.html
+    RewriteRule ^ index.php [L]
+
+
+    RewriteCond %{HTTP_HOST} ^[a-zA-Z-_]*\.bairle\.de$
+    RewriteCond %{HTTP_HOST} !^admin\.bairle\.de$
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule (.*)  https://%{HTTP_HOST}/$1   [L]
+
+
+
+RewriteCond %{HTTP_HOST} ^ingenics\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://ingenics.bairle.de/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^ingenics-services\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://ingenics-services.bairle.de/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^roehm\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://roehm.bairle.de/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^driventic\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://driventic.bairle.de/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^web2print\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+#RewriteCond %{REQUEST_URI} !login.html
+RewriteRule ^(.*)$ https://web2print.bairle.de/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^demo\.bairle\.de [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://demo.bairle.de/$1 [R,L]
+
+</IfModule>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="303.307pt" height="193.89pt" viewBox="0 0 303.307 193.89">
+<g transform="scale(1.25822552864762)">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(1,0,0,-1,-20.9764,176.93)" d="M0 0H282.945V197.906H0Z"/>
+</clipPath>
+</defs>
+<path transform="matrix(1,0,0,-1,-20.9764,176.93)" d="M18.165 18.165H264.779V26.669H18.165Z" fill="#1c3444"/>
+<g clip-path="url(#clip_0)">
+<path transform="matrix(1,0,0,-1,-5.9764006,.024490357)" stroke-width="1.25" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M0 0H-15M252.945 0H267.945M0-155.906H-15M252.945-155.906H267.945M6 6V21M6-161.906V-176.906M246.945 6V21M246.945-161.906V-176.906"/>
+<path transform="matrix(1,0,0,-1,-5.9764006,.024490357)" stroke-width=".25" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0H-15M252.945 0H267.945M0-155.906H-15M252.945-155.906H267.945M6 6V21M6-161.906V-176.906M246.945 6V21M246.945-161.906V-176.906"/>
+</g>
+</g>
+</svg>
