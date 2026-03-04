@@ -1,4 +1,0 @@
-FPDI
-====
-
-FDPI clone
